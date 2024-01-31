@@ -8,14 +8,14 @@ const Layout = () => {
       <nav >
         <img src={logo} alt="Logo" />
         <span>
-          <Link to="/">หน้าหลัก  </Link>
+          <Link to="/">Home  </Link>
         </span>
         <span>
           <Link to="/blogs">Blogs  </Link>
         </span>
 
         <span>
-          <Link to="/contact">ติดต่อเรา  </Link>
+          <Link to="/contact">Contact us  </Link>
         </span>
         <span>
           <Link to="/login">Login  </Link>
