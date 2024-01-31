@@ -1,0 +1,18 @@
+
+img{
+    width:10%;
+    height:10%;
+}
+nav{
+    width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+  transition: all .7s ease-in;
+}
+nav span{
+    margin:1%
+}
+Link{
+    text-decoration: none
+}
