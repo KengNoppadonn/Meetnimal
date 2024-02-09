@@ -22,8 +22,11 @@ export default function Register() {
         password : password
        
     }).then((response) => {
-      console.log(response)
-        // setche(response)
+      if (Response.data === "Values inserted"){
+        navigate('/', { replace: true });
+      }else{
+        navigate('/Reg_f', { replace: true });
+    }
 
       });
   };

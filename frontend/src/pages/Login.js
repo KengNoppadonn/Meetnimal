@@ -28,6 +28,7 @@ export default function Login() {
       <input type="text" onChange={(event) =>{setPhone(event.target.value)}}  />
       <input type="password" onChange={(event) =>{setpassword(event.target.value)}}  />
       <button onClick={Check}>Login</button>
+      <Link to='/register'>Register</Link>
       </div>
   );
 }

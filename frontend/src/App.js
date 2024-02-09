@@ -5,6 +5,7 @@ import Contactt from "./pages/Contactt";
 import Layout from "./pages/Layout";
 import Login from'./pages/Login'
 import Register from "./pages/Register";
+import Footer from "./pages/Footer"
 function App() {
 
   return (
@@ -26,6 +27,7 @@ function App() {
           </BrowserRouter>
         </span>
       </h1>
+      <Footer/>
     </div>
   );
 }

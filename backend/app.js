@@ -87,7 +87,16 @@ app.post('/register', (req, res) => {
 app.post('/login',(req,res)=>{
     const Phone=req.body.Phone;
     const Password=req.body.Password
-    res.send(Phone+Password)
+    db.query("SELECT * FROM `User_info` WHERE Phone=(?) AND Password=(?)",[Phone,Password],
+    (err,result)=>{
+        if(err){
+            console.log("Login system is Errer")
+        }
+        else {
+            console.log(result[0].Phone)
+            res.send("Login complete"+result)
+        }
+    })
 })
 
 app.get('/respaon_register',(req,res) => {
