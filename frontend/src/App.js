@@ -28,6 +28,7 @@ function App() {
         </span>
       </h1>
       <Footer/>
+      <Footer/>
     </div>
   );
 }
